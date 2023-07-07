@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./Imagenes/Fondo/yoga-logo2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+h1{
+    font-style: italic;
+    margin: 20px;
+}
+
+h2{
+    margin: 0px 0px 10px 10px;
+}
+
+h1,h2{
+    color: rgb(136, 136, 136);
+}
+
+nav,footer{
+    background-color: rgba(255, 182, 193, .6);
+    
+}
+
+.icono{
+        margin: 5px 0px 0px 5px;
+        text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    nav img{
+        width: 70px;
+    }
+
+    nav a{
+        padding: 5px;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+    }
+
+        nav ul li{
+            
+        }
+
+            nav ul li a{
+                text-decoration: none;
+                font-size: 1.1em;
+                line-height: 1.4em;
+                text-align: right;
+                color: rgb(0, 0, 0);
+                margin: 10px;
+            }
+
+p{
+font-size: 1.2em;
+line-height: 1.3em;
+color: rgb(79, 79, 79);
+margin: 0px 0px 10px 15px;
+}
+
+b{
+    color: rgb(79, 79, 79);
+    display: flex;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+}
+
+.redes a{
+    text-decoration: none;
+}
+
+.redes{
+    left: 0px;
+    bottom: 0px;
+    margin-top: 7px;
+}
+
+.tyc a{
+    text-decoration: none;
+}
+
+.tyc{
+    font-size: 1.1em;
+    line-height: 1.4em;
+    right: 10px;
+    margin: 5px 5px;
+    
+}
+
+.form{
+    color: rgb(79, 79, 79);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#nombre{
+    margin-bottom: 10px;
+}
+#apellido{
+    margin-bottom: 10px;
+}
+#email{
+    margin-bottom: 10px;
+}
+#casilla{
+    margin-bottom: 10px;
+}
+
+.mapa{
+    margin-left: 10px;
+}
+
+.mapa b{
+    margin-bottom: 5px;
+}
+
+.enviar :hover{
+    cursor: pointer;
+    background-color: rgb(129, 10, 240);
+}
+
+.enviar{
+    display: flex;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+
+.enviar input{
+    background-color: rgb(48, 182, 99);
+    color: rgb(255, 205, 5);
+}
+
+.terapias a{
+    text-decoration: none;
+    color: rgb(127, 140, 255);
+    font-style: italic;
+    font-size: large;
+    font-weight: 600;
+}
+
+.terapias a:hover{
+    text-decoration: underline;
+    color: rgb(22, 43, 231);
+}
+
+.terapias{
+    margin-left: 7px;
+}
+
+.lista-terapias{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    /* display: grid; */
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,2fr);
+    margin: 4px;
+}
+
+/* .secondary-content{
+margin: 7px;
+}
+
+.main-and-secondary-content{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas: 
+    "sobre-mi foto1" 
+    "mis-terapias foto1" 
+    "terapias-alternativas foto1" 
+    "reseñas foto2";
+} */
+
+#sobre-mi{
+grid-area: sobre-mi;
+margin-top: 7px;
+}
+
+#mis-terapias{
+grid-area: mis-terapias;
+/* margin-bottom: 143px; */
+}
+
+#terapias-alternativas{
+grid-area: terapias-alternativas;
+}
+
+#reseñas{
+grid-area: reseñas;
+}
+
+#foto1{
+grid-area: foto1;
+}
+
+#foto2{
+grid-area: foto2;
+}
+
+@media (width < 450px){
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mapa{
+        width: 100%;
+    }
+
+}
