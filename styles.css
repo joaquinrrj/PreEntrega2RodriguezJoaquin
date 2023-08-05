@@ -202,31 +202,24 @@ margin: 7px;
     "terapias-alternativas foto1" 
     "reseñas foto2";
 } */
-
-#sobre-mi{
-grid-area: sobre-mi;
-margin-top: 7px;
+#error{
+    display: flex;
+    background: none;
+    flex-direction: column;
 }
 
-#mis-terapias{
-grid-area: mis-terapias;
-/* margin-bottom: 143px; */
+#error button{
+    color: burlywood;
+    text-decoration: none;
+    display: flex;
 }
 
-#terapias-alternativas{
-grid-area: terapias-alternativas;
+#error img{
+    display: flex;
 }
 
-#reseñas{
-grid-area: reseñas;
-}
-
-#foto1{
-grid-area: foto1;
-}
-
-#foto2{
-grid-area: foto2;
+#error button :hover{
+    color: brown;
 }
 
 @media (width < 450px){
